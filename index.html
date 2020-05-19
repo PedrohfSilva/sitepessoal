@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Silva</title>
+    <link rel=stylesheet href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/78bf96bdc9.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="corpo container">
+    <header id="Tela_inicial">
+        <div class="background container">
+            <nav class="menuNavegacao container">
+                <ul>
+                    <li><a href="#Tela_inicial"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="#sobre"><i class="fas fa-user"></i> Sobre</a></li>
+                    <li><a href=#conhecimentos><i class="fas fa-check-square"></i> Conhecimentos</a></li>
+                    <li><a href="#projetos"><i class="fas fa-laptop-code"></i> Projetos</a></li>
+                    <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+            </nav>
+            <div class="titulos">
+                <h1>Pedro Silva</h1>
+                <h2>{Estudante de informática;}</h2>
+            </div>
+            <button class="proxima_pagina"><a href="#sobre"><i class="fas fa-chevron-down"></i></a></button>
+        </div>
+        <img src="Imagens/Imagem-header - Mobile.png">
+    </header>
+
+    <section id="sobre" class="container">
+        <div class="content">
+            <h1 class="titulo_h1">Sobre</h1>
+            <img src="Imagens/Imagem-perfil.jpg" alt="Imagem de perfil">
+            <p>Meu nome é Pedro, tenho 16 anos, e faço curso técnico em informática integrado ao ensino médio no IFSULDEMINAS.</p>
+            <p>Uma das coisas que eu mais gosto de fazer é programar, principalmente criar projetos de sites para Web no Front-end e no Back-end.</p>
+            <p>Para mim, programar é poder criar soluções para diversos problemas do dia a dia, e poder automatizar tarefas repetitivas, além de poder melhorar o raciocínio lógico e o pensamento algorítmico.</p>
+            <p>Com a ajuda de meus professores do IFSULDEMINAS, e do canal Curso em Vídeo, além de outros sites da internet, incluindo a plataforma de cursos da Alura, que fez alguns minicursos gratuitos durante a quarentena, eu pude melhorar meu conhecimento em programação.</p>
+            <p>Este site foi construido durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS</a>, da plataforma de cursos Alura.</p>
+        </div>
+        <button class="proxima_pagina"><a href="#conhecimentos"><i class="fas fa-chevron-down"></i></a></button>
+    </section>
+
+    <section id="conhecimentos" class="container">
+        <div class="content" id="content_conhecimentos">
+            <h1 class="titulo_h1">Conhecimentos</h1>
+            <div class="area" id="area1">
+                <h2 id="titulo_linguagens">Linguagens:</h2>
+                <ul id="linguagens" class="listas">
+                    <li>Linguagem C <div></div> <div></div> <div></div> <div></div></li>
+                    <li>Python <div></div> <div></div> <div></div> <div></div></li>
+                    <li>HTML5 <div></div> <div></div> <div></div> <div></div></li>
+                    <li>CSS3 <div></div> <div></div> <div></div> <div></div></li>
+                    <li>Javascript <div></div> <div></div> <div></div> <div></div></li>
+                </ul>
+            </div>
+            <div class="area" id="area2">
+                <h2 id="titulo_cursos">Cursos e eventos que participei:</h2>
+                <ul class="listas cursos_outros">
+                    <li><a href="https://portal.pas.ifsuldeminas.edu.br/noticias/1885-v-encomp" target="_blank">Introdução a programação em Python - EnComp - IFSULDEMINAS</a></li>
+                    <li><a href="https://www.alura.com.br/quarentenadev" target="_blank">QuarentenaDev - Alura</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o" target="_blank">Curso de HTML, CSS e JavaScript - Curso em vídeo</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank">Curso de JavaScript e ECMAScript - Curso em vídeo</a></li>
+                    <li><a href="https://www.alura.com.br/imersao-css" target="_blank">Imersão CSS - Alura</a></li>
+                    <li><a href="https://www.caelum.com.br/apostila-html-css-javascript/" target="_blank">Apostila de desenvolvimento Web - Caelum</a></li>
+                </ul>
+            </div>
+            <div class="area" id="area3">
+                <h2>Outros:</h2>
+                <ul class="cursos_outros">
+                    <li><a href="https://www.urionlinejudge.com.br/judge/pt/profile/359625"><i class="fas fa-code"></i> Mais de 120 exercícios de lógica de programação resolvidos no <a id="urionline" href="https://www.urionlinejudge.com.br/judge/en/login">URIONLINE</a></a></li>  
+                </ul>
+            </div>
+        </div>
+        
+        <button class="proxima_pagina"><a href="#projetos"><i class="fas fa-chevron-down"></i></a></button>
+    </section>
+
+    <section id="projetos" class="container">
+        <div class="content">
+            <h1 class="titulo_h1">Projetos</h1>
+            <h2>Sites e programas Web</h2>
+
+            <ul>
+                <li>
+                    <a href="https://pedrosilva-dev.github.io/calculadora-mmc-mdc/" target="_blank">
+                    <figure>
+                        <img src="Imagens/Calculadora_MMC_MDC.jpg" alt="Calculadora de MMC e MDC">
+                        <figcaption>
+                            <h1>Calculadora de MMC e MDC</h1>
+                            <p>Esse programa permite que você digite até 4 números inteiros positivos, e quando clicar no botão "Calcular" ele irá calcular o MMC (mímino múltiplo comum) e o MDC (máximo divisor comum) entre eles. Para limpar as áreas dos números e do resultado para digitar novos números, basta clicar em "Limpar".</p>
+                        </figcaption>
+                    </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pedrosilva-dev.github.io/relogio-analogico/" target="_blank">
+                    <figure>
+                        <img src="Imagens/Relogio_Analogico.jpg" alt="Relógio analógico">
+                        <figcaption>
+                            <h1>Relógio Analógico</h1>
+                            <p>Esse site mostra um relógio analógico com os ponteiros das horas, dos minutos e dos segundos, e também permite que você veja a data atual, de acordo com o horário e a data do sistema. Caso você ative o botão no lado superior direito, ele irá reproduzir o som do ponteiro dos segundos, conforme sua posição se altera.</p>
+                        </figcaption>
+                    </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <figure>
+                        <img src="Imagens/Treinando_Fatos.jpg" alt="Jogo para treinar fatos">
+                        <figcaption>
+                            <h1>Jogo para treinar fatos</h1>
+                            <p>Esse site permite que crianças, ou adultos treine fatos e melhore sua capacidade de realizar contas mentais. Na tela inicial, você deve escolher os tipos de operações que deseja treinar, o número mínimo e máximo que deverá aparecer nas operações, e se você deseja definir um tempo, ou a quantidade de operações para serem realizadas e depois clicar no botão "Começar". Após finalizar, ele mostrará o seu resultado, com a quantidade de acertos, erros, e o tempo gasto.</p>
+                        </figcaption>
+                    </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <figure>
+                        <img src="Imagens/Jogo_da_velha.jpg" alt="Jogo da velha">
+                        <figcaption>
+                            <h1>Jogo da velha</h1>
+                            <p>Esse site permite que você jogue o jogo da velha, escolhendo entre jogar com 1 ou 2 jogadores. Você poderá escolher o nome do(s) jogador(es) e iniciar a partida. Os jogadores jogarão um por vez marcando "X" ou "O" na tabela do jogo. Caso alguém vença, o jogo informará o vencedor.</p>
+                        </figcaption>
+                    </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <button class="proxima_pagina" id="proxima_projetos"><a href="#contato"><i class="fas fa-chevron-down"></i></a></button>
+    </section>
+
+    <section id="contato" class="container">
+
+    </section>
+
+    <footer></footer>
+</body>
+</html>

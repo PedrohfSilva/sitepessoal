@@ -1,0 +1,569 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 1px;
+}
+
+@media (min-width: 500px) {
+    html {
+        font-size: 1.4px;
+    }
+}
+
+@media (min-width: 800px) {
+    html {
+        font-size: 1.6px;
+    }
+}
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 1.8px;
+    }
+}
+
+section.container {
+    min-height: 100vh;
+    position: relative;
+    box-shadow: inset 0 4rem 12rem #0005;
+}
+/*Todas as telas*/
+
+
+
+header#Tela_inicial {
+    position: relative;
+    height: 100vh;
+    background-image: url('../Imagens/Imagem-header.jpg');
+    background-size: auto 100vh;
+}
+
+@media (min-device-aspect-ratio: 1280/858) {
+    header#Tela_inicial {
+        background-size: 100vw auto;
+    }
+}
+
+header .background {
+    position: relative;
+    height: 100vh;
+    background-color: rgba(199, 199, 199, 0.5);
+    z-index: 1;
+}
+
+.menuNavegacao {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    background-color: rgba(150, 148, 139, 0.8);
+    backdrop-filter: blur(6rem);
+    /*box-shadow: 0 2rem 4rem rgba(90, 70, 43, 0.2);*/
+}
+
+.menuNavegacao ul {
+    display: flex;
+    justify-content: space-around;
+    font: bold 15rem Arial;
+}
+
+.menuNavegacao ul li:hover {
+    background-color: #0001;
+    transform: scale(1.02);
+}
+
+.menuNavegacao ul a {
+    display: block;
+    padding: 0.8em 0;
+    color: #222;
+    text-decoration: none;
+}
+
+.menuNavegacao ul a:hover {
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .menuNavegacao li i {
+        display: none;
+    }
+}
+
+.menuNavegacao ul li:nth-child(1) {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .menuNavegacao ul a {
+        padding: 0.6em;
+    }
+}
+
+@media (min-width: 800px) {
+    .menuNavegacao ul a {
+        padding: 0.4em;
+    }
+    .menuNavegacao ul li:nth-child(1) {
+        display: block;
+    }
+}
+
+#Tela_inicial .titulos {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+
+#Tela_inicial img {
+    display: none;
+}
+
+@media (max-device-aspect-ratio: 610/800) {
+    #Tela_inicial .titulos {
+        top: 16%;
+        left: 4%;
+    }
+    #Tela_inicial img {
+        position: absolute;
+        right: 0;
+        bottom: 12%;
+        width: 130%;
+        display: block;
+    }
+}
+
+@media (max-device-aspect-ratio: 610/800) and (min-device-aspect-ratio: 130/215) {
+    #Tela_inicial img {
+        bottom: 8%;
+        width: 110%;
+    }
+}
+
+.titulos h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 45rem;
+    color: #333;
+    text-shadow: 4rem 4rem 4rem #2226;
+    margin-bottom: 25rem;
+}
+
+.titulos h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 32rem;
+    color: #222;
+    text-shadow: 2rem 2rem 2rem #2226;
+}
+
+button.proxima_pagina {
+    position: absolute;
+    bottom: 4vh;
+    left: 50%;
+    transform: translateX(-50%) scaleY(0.8);
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 30rem;
+    color: #222;
+}
+
+button.proxima_pagina a {
+    font-size: 30rem;
+    color: #222;
+    transform: scaleX(0.5);
+}
+
+button.proxima_pagina:hover {
+    transform: translateX(-50%) scale(1.1) scaleY(0.8);
+}
+
+button.proxima_pagina:active {
+    transform: translateX(-50%) scale(1.1) scaleY(0.8);
+}
+
+@media (max-width: 600px) {
+    button.proxima_pagina {
+        bottom: 6vh;
+    }
+}
+/*Tela de início*/
+
+
+
+section#sobre {
+    padding: 25rem 25rem 80rem 25rem;
+    background-color: rgb(197, 195, 193);
+}
+
+@media (max-width: 350px) {
+    section#sobre {
+        padding: 15rem 15rem 80rem 15rem;
+    }
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo_h1 {
+    font: bolder 20rem Arial;
+    text-decoration: underline;
+    margin: 18rem 0 24rem;
+    color: #111;
+}
+
+@media (max-width: 600px) {
+    .titulo_h1 {
+        font: bolder 24rem Arial;
+        margin: 40rem 0 30rem;
+    }
+}
+
+#sobre p {
+    font: normal 12rem Verdana;
+    text-align: justify;
+    text-indent: 20rem;
+    margin-bottom: 12rem;
+}
+
+#sobre a {
+    color: #000;
+    text-decoration: none;
+}
+
+#sobre a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+#sobre img {
+    transform: rotateY(180deg);
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+    width: 140rem;
+    float: right;
+    margin-left: 8em;
+    border-radius: 8px;
+}
+
+@media (max-width: 500px) {
+    #sobre p {
+        font-size: 14em;
+    }
+    #sobre img {
+        float: left; 
+        clip-path: none;
+        margin: 0 20em 10em 0;
+        width: 140rem;
+        box-shadow: -2rem 2rem 3rem #2226;
+        border-radius: 4px;
+    }
+}
+/*Tela sobre*/
+
+
+
+section#conhecimentos {
+    background-color: #CCC;
+    padding: 25rem 25rem 60rem 25rem;
+}
+
+@media (max-width: 350px) {
+    section#conhecimentos {
+        padding: 15rem 15rem 60rem 15rem;
+    }
+}
+
+div#content_conhecimentos {
+    max-width: 1300px;
+}
+
+#conhecimentos .area {
+    display: block;
+    width: 48%;
+    margin-bottom: 40rem;
+}
+
+#area1 {
+    float: left;
+    font-family: 'Inconsolata', monospace;
+    font-size: 14rem;
+}
+
+#area2 {
+    float: right;
+    font-family: Arial, sans-serif;
+    font-size: 12rem;
+}
+
+#area3 {
+    font-family: Arial, sans-serif;
+    font-size: 12rem;
+}
+
+#conhecimentos h2 {
+    font: bold 15rem Arial;
+    margin-bottom: 12rem;
+}
+
+#conhecimentos ul#linguagens li {
+    margin-bottom: 12rem;
+    height: 16rem;
+    background-color: #BBB;
+    padding-left: 2rem;
+}
+
+#conhecimentos ul#linguagens div {
+    background-color: #0005;
+    width: 15%;
+    height: 12rem;
+    float: right;
+    margin: 2rem;
+}
+
+#conhecimentos ul#linguagens li:nth-child(1) div:nth-child(n + 3) {
+    background-color: rgb(11, 84, 194);
+    box-shadow: 0 0 6rem rgb(0, 90, 226, .8);
+}
+
+#conhecimentos ul#linguagens li:nth-child(2) div:nth-child(n + 4) {
+    background-color: rgb(11, 84, 194);
+    box-shadow: 0 0 6rem rgb(0, 90, 226, .8);
+}
+
+#conhecimentos ul#linguagens li:nth-child(3) div:nth-child(n + 3) {
+    background-color: rgb(11, 84, 194);
+    box-shadow: 0 0 6rem rgb(0, 90, 226, .8);
+}
+
+#conhecimentos ul#linguagens li:nth-child(4) div:nth-child(n + 2) {
+    background-color: rgb(11, 84, 194);
+    box-shadow: 0 0 6rem rgb(0, 90, 226, .8);
+}
+
+#conhecimentos ul#linguagens li:nth-child(5) div:nth-child(n + 2) {
+    background-color: rgb(11, 84, 194);
+    box-shadow: 0 0 6rem rgb(0, 90, 226, .8);
+}
+
+@media (max-width: 900px) {
+    #conhecimentos .area {
+        width: 70%;
+        float: none;
+        margin: 0 auto 50rem auto; 
+    }
+}
+
+@media (max-width: 600px) {
+    #conhecimentos .area {
+        width: 100%;
+        font-size: 16rem;
+    }
+    #conhecimentos #area2,
+    #conhecimentos #area3 {
+        font-size: 14rem;
+    }
+    #conhecimentos h2 {
+        margin-bottom: 20rem;
+        font: bold 18rem Arial;
+    }
+    #conhecimentos li {
+        margin-bottom: 20rem;
+        
+    }
+    #conhecimentos ul#linguagens li {
+        height: 20rem;
+    }
+    #conhecimentos ul#linguagens div {
+        height: 14rem;
+        margin: 3rem;
+    }
+}
+
+
+
+#conhecimentos ul.cursos_outros li {
+    text-align: justify;
+    margin-bottom: 16rem;
+}
+
+#conhecimentos ul.cursos_outros li:hover {
+    transform: scale(1.002);
+}
+
+#conhecimentos ul.cursos_outros a {
+    color: #222;
+}
+
+#conhecimentos ul.cursos_outros a:hover {
+    color: #448;
+}
+
+div#area3 a{
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+}
+
+#conhecimentos a#urionline:hover {
+    color: red;
+}
+/*Tela conhecimentos*/
+
+
+
+section#projetos {
+    background-color: #C0C0C2;
+    padding: 25rem 25rem 80rem 25rem;
+}
+
+#projetos h2 {
+    font: bold 15rem Arial;
+    margin-bottom: 12rem;
+}
+
+@media (max-width: 600px) {
+    #projetos h2 {
+        margin-bottom: 20rem;
+        font: bold 18rem Arial;
+    }
+}
+
+#projetos a {
+    color: #111;
+    text-decoration: none;
+}
+
+#projetos figure {
+    width: 100%;
+    height: 160rem;
+    background-color: #DDD;
+    padding: 20rem;
+    margin-bottom: 20rem;
+    border-radius: 10rem;
+    box-shadow: 2rem 2rem 4rem 2rem #2225;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#projetos figure:hover {
+    transform: scale(1.01);
+    box-shadow: 2rem 2rem 6rem 4rem #2225;
+}
+
+#projetos img {
+    width: 120rem;
+    height: 120rem;
+    box-shadow: 0.5rem 0.5rem 2rem 2rem #0004;
+    border-radius: 5rem;
+    float: left;
+}
+
+#projetos figcaption {
+    height: 120rem;
+    width: 75%;
+    float: right;
+    overflow: auto;
+}
+
+#projetos figure h1 {
+    font: bold 14rem 'Inconsolata', monospace;
+    margin-bottom: 16rem;
+}
+
+#projetos figure p {
+    font: normal 10rem Arial;
+    line-height: 15rem;
+    text-align: justify;
+}
+
+@media (max-width: 1200px) {
+    #projetos figcaption {
+        width: 70%;
+    }
+}
+
+@media (max-width: 900px) {
+    #projetos figcaption {
+        width: 65%;
+    }
+}
+
+@media (max-width: 700px) {
+    #projetos figcaption {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    #projetos ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #projetos li {
+        width: 40%;
+    }
+    #projetos figure {
+        box-shadow: none;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    #projetos figure:hover {
+        box-shadow: none;
+    }
+    #projetos img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 12rem;
+    }
+    #projetos figcaption {
+        width: 100%;
+        height: 50rem;
+        text-align: center;
+        overflow: visible;
+    }
+    #projetos figure h1 {
+        font: bold 16rem 'Inconsolata', monospace;  
+    }
+    #projetos figure p {
+        display: none;
+    }
+}
+
+/*@media (max-width: 500px) {
+    #projetos li {
+        width: 70%;
+    }
+    #projetos img {
+        border-radius: 10rem;
+    }
+    #projetos figure h1 {
+        font: bold 24rem 'Inconsolata', monospace;  
+    }
+}
+
+@media (max-width: 420px) {
+    #projetos li {
+        width: 80%;
+    }
+    #projetos figure h1 {
+        font: bold 21rem 'Inconsolata', monospace;  
+    }
+}*/
+
+@media (max-width: 500px) {
+    #projetos ul {
+        justify-content: space-between;
+    }
+    #projetos li {
+        width: 46%;
+    }
+}
