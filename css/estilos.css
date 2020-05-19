@@ -66,7 +66,6 @@ header .background {
     width: 100vw;
     background-color: rgba(150, 148, 139, 0.8);
     backdrop-filter: blur(6rem);
-    /*box-shadow: 0 2rem 4rem rgba(90, 70, 43, 0.2);*/
 }
 
 .menuNavegacao ul {
@@ -134,7 +133,7 @@ header .background {
     #Tela_inicial img {
         position: absolute;
         right: 0;
-        bottom: 12%;
+        bottom: 14%;
         width: 130%;
         display: block;
     }
@@ -142,7 +141,7 @@ header .background {
 
 @media (max-device-aspect-ratio: 610/800) and (min-device-aspect-ratio: 130/215) {
     #Tela_inicial img {
-        bottom: 8%;
+        bottom: 10%;
         width: 110%;
     }
 }
@@ -188,9 +187,15 @@ button.proxima_pagina:active {
     transform: translateX(-50%) scale(1.1) scaleY(0.8);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
     button.proxima_pagina {
         bottom: 6vh;
+    }
+}
+
+@media (max-width: 600px) {
+    button.proxima_pagina {
+        bottom: 8vh;
     }
 }
 /*Tela de início*/
@@ -230,16 +235,16 @@ section#sobre {
 #sobre p {
     font: normal 12rem Verdana;
     text-align: justify;
-    text-indent: 20rem;
+    text-indent: 10rem;
     margin-bottom: 12rem;
 }
 
-#sobre a {
+#sobre p a {
     color: #000;
     text-decoration: none;
 }
 
-#sobre a:hover {
+#sobre p a:hover {
     color: #222;
     text-decoration: underline;
 }
@@ -279,10 +284,6 @@ section#conhecimentos {
     section#conhecimentos {
         padding: 15rem 15rem 60rem 15rem;
     }
-}
-
-div#content_conhecimentos {
-    max-width: 1300px;
 }
 
 #conhecimentos .area {
@@ -387,8 +388,6 @@ div#content_conhecimentos {
     }
 }
 
-
-
 #conhecimentos ul.cursos_outros li {
     text-align: justify;
     margin-bottom: 16rem;
@@ -435,7 +434,7 @@ section#projetos {
     }
 }
 
-#projetos a {
+#projetos ul a {
     color: #111;
     text-decoration: none;
 }
@@ -538,27 +537,6 @@ section#projetos {
     }
 }
 
-/*@media (max-width: 500px) {
-    #projetos li {
-        width: 70%;
-    }
-    #projetos img {
-        border-radius: 10rem;
-    }
-    #projetos figure h1 {
-        font: bold 24rem 'Inconsolata', monospace;  
-    }
-}
-
-@media (max-width: 420px) {
-    #projetos li {
-        width: 80%;
-    }
-    #projetos figure h1 {
-        font: bold 21rem 'Inconsolata', monospace;  
-    }
-}*/
-
 @media (max-width: 500px) {
     #projetos ul {
         justify-content: space-between;
@@ -567,3 +545,125 @@ section#projetos {
         width: 46%;
     }
 }
+/*Tela projetos*/
+
+
+
+section#contato {
+    background-color: #B6B6B6;
+    padding: 25rem;
+}
+
+#contato ul {
+    display: grid;
+    width: 260rem;
+    height: 260rem;
+    margin: 40rem auto 0 auto;
+    grid-template: 2fr 2fr / 2fr 2fr;
+}
+
+#contato li {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contato li a {
+    text-decoration: none;
+}
+
+#contato li i {
+    font-size: 80rem;
+    color: #444;
+    transition: .2s;
+}
+
+#contato li p {
+    font: normal 10rem Arial;
+    color: #222;
+    transition: .4s;
+}
+
+#contato li a:hover i {
+    color: #222;
+    transform: scale(1.04);
+}
+
+#contato li a:hover p {
+    text-decoration: underline;
+}
+
+#contato a#voltar_topo {
+    font: bold 16rem Arial;
+    color: #222;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20vh;
+    text-decoration: none;
+}
+
+#contato a#voltar_topo:hover {
+    color: #111;
+    transform: translateX(-50%) scale(1.02);
+}
+
+#contato footer {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6vh;
+    width: 100%;
+    background-color: rgb(85, 82, 78);
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 -4rem 4rem #0008, 0 -4rem 8rem #0004;
+    padding: 0 2vw;
+}
+
+#contato footer p {
+    font: normal 13rem Verdana;
+    color: #DDD;
+    text-shadow: 2rem 2rem 4rem #0008;
+}
+
+@media (max-width: 350px) {
+    #contato ul {
+        margin: -20rem auto 0 auto;
+    }
+    #contato footer {
+        height: 10vh;
+        padding: 0 4vw;
+    }
+    #contato footer p {
+        font-size: 15rem;
+    }
+}
+
+@media (max-width: 300px) {
+    #contato ul {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    #contato ul {
+        width: 320rem;
+        height: 320rem;
+    }
+    #contato a#voltar_topo {
+        font-size: 18rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    #contato ul {
+        width: 100%;
+        height: 200rem;
+        grid-template: 1fr / repeat(4, 1fr);
+    }
+}
+/*Tela contato*/
