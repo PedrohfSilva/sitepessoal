@@ -280,6 +280,12 @@ section#conhecimentos {
     padding: 25rem 25rem 60rem 25rem;
 }
 
+@media (max-height: 1150px) {
+    section#conhecimentos {
+        min-height: 130vh;
+    }
+}
+
 @media (max-width: 350px) {
     section#conhecimentos {
         padding: 15rem 15rem 60rem 15rem;
